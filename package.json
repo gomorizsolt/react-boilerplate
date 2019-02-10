@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "RB is a customizable boilerplate for React projects.",
   "main": "index.js",
   "scripts": {
@@ -34,6 +34,7 @@
     "enzyme-to-json": "^3.3.5",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.1.0",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3",
@@ -46,6 +47,9 @@
   "jest": {
     "setupFiles": [
       "<rootDir>/src/setupTests.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      ".+\\.(png|jpg|css)$": "identity-obj-proxy"
+    }
   }
 }
