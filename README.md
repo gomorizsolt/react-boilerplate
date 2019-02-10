@@ -18,7 +18,12 @@ The first major version should contain the following items:
 
 Later / future decisions:
 - Redux implementation.
+- React-router.
 - Prettier.
 - Make the whole boilerplate configurable via custom scripts - e.g. not all of the project are running on Redux, unnecessary dependency.
 - Automatic Heroku deployment.
 - PWA.
+
+### License
+
+The project is under the MIT license. For more information read the [**LICENSE.md**](./LICENSE.md) file.
