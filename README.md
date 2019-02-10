@@ -20,7 +20,7 @@ Later / future decisions:
 - Redux implementation.
 - React-router.
 - Prettier.
-- Make the whole boilerplate configurable via custom scripts - e.g. not all of the project are running on Redux, unnecessary dependency.
+- Make the whole boilerplate configurable via custom scripts - e.g. not all of the projects are running Redux, this is an unnecessary dependency that should be avoided by the aforementioned feature.
 - Automatic Heroku deployment.
 - PWA.
 
