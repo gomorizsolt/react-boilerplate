@@ -13,6 +13,7 @@ The first major version should contain the following items:
 - Essential webpack and babel configurations.
 - Integrate styled-components.
 - Pre-commit.
+- DotEnv.
 - Create an example for each of the implemented stuff for the explorers / beginners.
 - Establish a well-detailed documentation about the packages, useful techniques and tricks to introduce some parts of the project.
 
