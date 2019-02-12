@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const app = () => (
-    <div>
-        Basic <b>RB</b> project!
-    </div>
+  <div>
+        Basic RB project!
+
+  </div>
 );
 
 export default app;

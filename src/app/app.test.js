@@ -1,15 +1,15 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import App from './app';
+import React from "react";
+import { shallow } from "enzyme";
+import App from "./app";
 
-describe('<App />', () => {
-    let wrapper;
+describe("<App />", () => {
+  let wrapper;
 
-    beforeEach(() => {
-        wrapper = shallow(<App />);
-    });
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+  });
 
-    it('renders without crashing', () => {
-        expect(wrapper.find('div').text()).toEqual('Basic RB project!');
-    });
+  it("renders without crashing", () => {
+    expect(wrapper.find("div").text()).toEqual("Basic RB project!");
+  });
 });
