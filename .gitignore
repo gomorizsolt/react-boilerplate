@@ -3,3 +3,6 @@
 
 # production
 /dist
+
+# jest coverage
+/coverage
