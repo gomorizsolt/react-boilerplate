@@ -1,12 +1,12 @@
 # Milestones
 
 Major steps:
-- React v16.8.1 along with the stable version of Hooks.
-- ESlint setup along with a couple of fundamental rules.
-- Provide testing with Jest and Enzyme - setup the coverage feedback as well.
-- Essential webpack and babel configurations.
+- [x] React v16.8.1 along with the stable version of Hooks.
+- [x] ESlint setup along with a couple of fundamental rules.
+- [x] Provide testing with Jest and Enzyme - setup the coverage feedback as well.
+- [x] Essential webpack and babel configurations.
 - Integrate styled-components.
-- Pre-commit.
+- [x] Pre-commit.
 - DotEnv.
 - Create an example for each of the implemented stuff for the explorers / beginners.
 - Establish a well-detailed documentation about the packages, useful techniques and tricks to introduce some parts of the project.
