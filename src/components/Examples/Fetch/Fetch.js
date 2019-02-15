@@ -4,13 +4,22 @@ import FetchJsonAPI from '../../../utils/FetchJsonAPI/FetchJsonAPI';
 const fetch = () => {
   const [todos, setTodos] = useState([]);
 
-  useEffect(() => {
-    const fetchedTodos = FetchJsonAPI();
+  const fetchTodos = async () => {
+    const fetchedTodos = await FetchJsonAPI();
+
     setTodos(fetchedTodos);
-  }, todos);
+  };
+
+  // How to handle async actions in hooks?
+  useEffect(() => {
+    fetchTodos();
+  }, []);
 
   return (
-    <p>You have just fetched a bunch of TODOS!</p>
+    <div>
+      <p>You have just fetched a TODO!</p>
+      {JSON.stringify(todos)}
+    </div>
   );
 };
 
