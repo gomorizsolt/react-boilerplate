@@ -6,7 +6,7 @@ Major features:
 - [x] ESlint along with fundamental rules.
 - [x] Jest and Enzyme.
 - [x] Pre-commit.
-- [ ] Styled-components.
+- [x] CSS loader and Styled-components.
 - [ ] DotEnv.
 - [ ] Prettier.
 - [ ] PWA.
