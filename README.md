@@ -2,28 +2,21 @@
 
 ### What the hack is RB?
 
-RB is a customizable boilerplate for React projects. Initially this will contain some basic functionalities - such as testing with Jest and Enzyme, linting, webpack configurations and so on - in order to have a structure to either begin your journey with React as a beginner or start up a new one for practice / job.
+RB is a simple boilerplate for your React projects.
 
-### Milestones
+### There are a bunch of other similar packages.
 
-The first major version should contain the following items:
-- React v16.8.1 along with the stable version of Hooks.
-- ESlint setup along with a couple of fundamental rules.
-- Provide testing with Jest and Enzyme - setup the coverage feedback as well.
-- Essential webpack and babel configurations.
-- Integrate styled-components.
-- Pre-commit.
-- DotEnv.
-- Create an example for each of the implemented stuff for the explorers / beginners.
-- Establish a well-detailed documentation about the packages, useful techniques and tricks to introduce some parts of the project.
+Eventually, it's true.
 
-Later / future decisions:
-- Redux implementation.
-- React-router.
-- Prettier.
-- Make the whole boilerplate configurable via custom scripts - e.g. not all of the projects are running Redux, this is an unnecessary dependency that should be avoided by the aforementioned feature.
-- Automatic Heroku deployment.
-- PWA.
+### Then why did you create it?
+
+As far as I know most of the other similar React specific boilerplates contain features that are sometimes being either unused or unnecessary throughout projects. That being said, here is the concept that solves the aforementioned issue:
+- First and foremost, establish the basics, for example some files along with webpack that provide the fundamentals.
+- Let the user determines the features based on the needs. This implies using pre-defined script flags in order to add extra stuff to the existing project.
+
+### Wow, sounds good. How does it work?
+
+Read the documentation and try it on your own. :)
 
 ### License
 
