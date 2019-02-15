@@ -14,13 +14,11 @@ Eventually, it's true.
 
 First and foremost, the repo is created for some kind of interests. In addition, I wouldn't like to establish a project each time with the same needs.
 
-In theory, most of the other similar React specific boilerplates contain features that are being unused throughout the process. Simply put, why should we stick to these and leave them inside the project along with their dependencies?
+Simply put, this skeleton conaints nothing special. It involves the main basic stuff along with some pre-created examples in order to keep up with React.
 
-The solution: let the user determines the involved stuff based on the needs. Briefly, create the very basics and extend it with other features whenever it's needed.
+### The simplicity sounds good. What kind of functionalities does it provide?
 
-### Wow, sounds good. How does it work?
-
-Read the documentation and try it on your own. :)
+Read the related documentation.
 
 ### License
 
