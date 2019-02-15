@@ -9,20 +9,11 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
         "import/prefer-default-export": 0,
+        "linebreak-style": ["error", (process.platform === "win32" ? "windows" : "unix")],
+        "import/prefer-default-export": 0,
+        "react/jsx-one-expression-per-line": 0
     }
 };
