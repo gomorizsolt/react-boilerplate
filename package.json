@@ -57,7 +57,7 @@
   },
   "jest": {
     "setupFiles": [
-      "<rootDir>/src/setupTests.js"
+      "<rootDir>/src/utils/SetupTests/SetupTests.js"
     ],
     "moduleNameMapper": {
       ".+\\.(png|jpg|css)$": "identity-obj-proxy"
