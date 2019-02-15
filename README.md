@@ -10,9 +10,11 @@ Eventually, it's true.
 
 ### Then why did you create it?
 
-As far as I know most of the other similar React specific boilerplates contain features that are sometimes being either unused or unnecessary throughout projects. That being said, here is the concept that solves the aforementioned issue:
-- First and foremost, establish the basics, for example some files along with webpack that provide the fundamentals.
-- Let the user determines the features based on the needs. This implies using pre-defined script flags in order to add extra stuff to the existing project.
+First and foremost, the repo is created for some kind of interests. In addition, I wouldn't like to establish a project each time with the same needs.
+
+In theory, most of the other similar React specific boilerplates contain features that are being unused throughout the process. Simply put, why should we stick to these and leave them inside the project along with their dependencies?
+
+The solution: let the user determines the involved stuff based on the needs. Briefly, create the very basics and extend it with other features whenever it's needed.
 
 ### Wow, sounds good. How does it work?
 
