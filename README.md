@@ -1,5 +1,7 @@
 # RB
 
+[![CircleCI](https://circleci.com/gh/gomorizsolt/react-boilerplate/tree/master.svg?style=svg&circle-token=ce1c7d622158db4975687d0a4e6a9214d3403c0c)](https://circleci.com/gh/gomorizsolt/react-boilerplate/tree/master)
+
 ### What the hack is RB?
 
 RB is a simple boilerplate for your React projects.
