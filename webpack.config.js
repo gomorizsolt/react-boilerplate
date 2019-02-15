@@ -18,6 +18,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [
@@ -27,6 +31,6 @@ module.exports = {
     }),
   ],
   devServer: {
-    port: 3000,
+    port: 3001,
   },
 };
