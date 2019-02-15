@@ -10,10 +10,9 @@ const fetch = () => {
     setTodos(fetchedTodos);
   };
 
-  // How to handle async actions in hooks?
   useEffect(() => {
     fetchTodos();
-  }, []);
+  }, [todos]);
 
   return (
     <div>
