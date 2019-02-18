@@ -7,7 +7,7 @@ Major features:
 - [x] Jest and Enzyme.
 - [x] Pre-commit.
 - [x] CSS loader and Styled-components.
-- [ ] DotEnv.
+- [x] DotEnv.
 - [ ] Prettier.
 - [ ] PWA.
 - [ ] Heroku deployment.
