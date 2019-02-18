@@ -1,5 +1,7 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
   entry: ['babel-polyfill', path.join(__dirname, 'src/index.js')],
@@ -31,6 +33,7 @@ module.exports = {
       template: './public/index.html',
       filename: './index.html',
     }),
+    new Dotenv(),
   ],
   devServer: {
     port: 3001,
