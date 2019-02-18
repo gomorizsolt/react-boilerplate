@@ -10,11 +10,19 @@ jest.mock('../../../utils/FetchJsonAPI/FetchJsonAPI', () => require
   ));
 
 // TOOD: get rid if useLayoutEffect since it's synchronous.
+// https://github.com/facebook/react/issues/14050
+// Temporary solution: https://github.com/facebook/react/issues/14050#issuecomment-438173736
 describe('<Fetch />', () => {
   let fetchWrapper;
 
   beforeEach(() => {
     fetchWrapper = mount(<Fetch />);
+  });
+
+  it('renders the text between the first paragraph', () => {
+    const expectedText = 'You have just fetched a TODO!';
+
+    expect(fetchWrapper.find('p').first().text()).toEqual(expectedText);
   });
 
   it('calls FetchJsonAPI', () => {
