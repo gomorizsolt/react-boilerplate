@@ -4,9 +4,10 @@
   "description": "RB is a customizable boilerplate for React projects.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
+    "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "test": "jest --coverage",
+    "test": "jest",
+    "test-coverage": "jest --coverage",
     "lint": "eslint src"
   },
   "repository": {

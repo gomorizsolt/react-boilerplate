@@ -9,7 +9,7 @@ describe('<Hooks />', () => {
     wrapper = mount(<Hooks />);
   });
 
-  it('renders the text first between the paragraphs', () => {
+  it('renders the text between the first paragraphs', () => {
     expect(wrapper.find('p').first().text()).toEqual('Hooks');
   });
 

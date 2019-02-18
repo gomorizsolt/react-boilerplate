@@ -1,4 +1,4 @@
-import FetchJsonAPI from './FetchJsonAPI';
+import * as fetch from './FetchJsonAPI';
 
 const json = jest.fn().mockResolvedValue(() => ({
   title: 'Lorem Ipsum',
@@ -18,13 +18,13 @@ describe('FetchJsonAPI', () => {
   });
 
   it('calls window.fetch', () => {
-    FetchJsonAPI();
+    fetch.fetchJsonAPI();
 
     expect(fetchMock).toHaveBeenCalled();
   });
 
   it('calls json', () => {
-    FetchJsonAPI();
+    fetch.fetchJsonAPI();
 
     expect(json).toHaveBeenCalled();
   });
