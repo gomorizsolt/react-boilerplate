@@ -14,7 +14,7 @@ Eventually, it's true.
 
 First and foremost, the repo is created for some kind of interests. In addition, I wouldn't like to establish a project each time with the same needs.
 
-Simply put, this skeleton conains nothing special. It involves the main basic stuff along with some pre-created examples in order to keep up with React.
+Simply put, this skeleton contains nothing special. It involves the main basic stuff along with some pre-created examples in order to keep up with React.
 
 ### The simplicity sounds good. What kind of functionalities does it provide?
 
