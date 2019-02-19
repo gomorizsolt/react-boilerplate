@@ -8,7 +8,7 @@ Major features:
 - [x] Pre-commit.
 - [x] CSS loader and Styled-components.
 - [x] DotEnv.
-- [ ] Prettier.
+- [x] Prettier.
 - [ ] PWA.
 - [ ] Heroku deployment.
 - [ ] Examples.
