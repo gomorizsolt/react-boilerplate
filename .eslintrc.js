@@ -4,9 +4,13 @@ module.exports = {
         "jest": true,
         "browser": true    
     },
-    "extends": "airbnb",
+    "extends": [
+        "airbnb",
+        "plugin:prettier/recommended"
+    ],
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],

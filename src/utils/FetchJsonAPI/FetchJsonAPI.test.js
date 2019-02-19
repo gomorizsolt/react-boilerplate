@@ -1,7 +1,7 @@
-import * as fetch from './FetchJsonAPI';
+import * as fetch from "./FetchJsonAPI";
 
 const json = jest.fn().mockResolvedValue(() => ({
-  title: 'Lorem Ipsum',
+  title: "Lorem Ipsum",
 }));
 
 window.fetch = jest.fn().mockImplementation(() => ({
@@ -9,21 +9,20 @@ window.fetch = jest.fn().mockImplementation(() => ({
   json,
 }));
 
-
-describe('FetchJsonAPI', () => {
+describe("FetchJsonAPI", () => {
   let fetchMock;
 
   beforeEach(() => {
-    fetchMock = jest.spyOn(window, 'fetch');
+    fetchMock = jest.spyOn(window, "fetch");
   });
 
-  it('calls window.fetch', () => {
+  it("calls window.fetch", () => {
     fetch.fetchJsonAPI();
 
     expect(fetchMock).toHaveBeenCalled();
   });
 
-  it('calls json', () => {
+  it("calls json", () => {
     fetch.fetchJsonAPI();
 
     expect(json).toHaveBeenCalled();

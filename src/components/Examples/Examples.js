@@ -1,6 +1,6 @@
-import React from 'react';
-import Hooks from './Hooks/Hooks';
-import Fetch from './Fetch/Fetch';
+import React from "react";
+import Hooks from "./Hooks/Hooks";
+import Fetch from "./Fetch/Fetch";
 
 const examples = () => (
   <div>

@@ -1,23 +1,28 @@
-import React from 'react';
-import { mount } from 'enzyme';
-import Hooks from './Hooks';
+import React from "react";
+import { mount } from "enzyme";
+import Hooks from "./Hooks";
 
-describe('<Hooks />', () => {
+describe("<Hooks />", () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(<Hooks />);
   });
 
-  it('renders the text between the first paragraphs', () => {
-    expect(wrapper.find('p').first().text()).toEqual('Hooks');
+  it("renders the text between the first paragraphs", () => {
+    expect(
+      wrapper
+        .find("p")
+        .first()
+        .text(),
+    ).toEqual("Hooks");
   });
 
-  describe('input change', () => {
-    const name = 'Hooks Test';
+  describe("input change", () => {
+    const name = "Hooks Test";
 
-    it('displays the greeting text properly', () => {
-      wrapper.find('input').simulate('change', {
+    it("displays the greeting text properly", () => {
+      wrapper.find("input").simulate("change", {
         target: {
           value: name,
         },
@@ -25,7 +30,12 @@ describe('<Hooks />', () => {
 
       const expectedText = `Hello ${name}!`;
 
-      expect(wrapper.find('p').at(1).text()).toEqual(expectedText);
+      expect(
+        wrapper
+          .find("p")
+          .at(1)
+          .text(),
+      ).toEqual(expectedText);
     });
   });
 });

@@ -1,4 +1,4 @@
-export const mockOriginalFunctionality = (name) => {
+export const mockOriginalFunctionality = name => {
   const actualModule = require.requireActual(name);
 
   return {

@@ -1,6 +1,6 @@
-import React from 'react';
-import Examples from '../Examples/Examples';
-import { BasicDiv } from './App.style';
+import React from "react";
+import Examples from "../Examples/Examples";
+import { BasicDiv } from "./App.style";
 
 const app = () => (
   <BasicDiv>

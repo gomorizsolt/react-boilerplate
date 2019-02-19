@@ -1,31 +1,36 @@
-import React from 'react';
-import { mount } from 'enzyme';
-import Fetch from './Fetch';
-import * as fetcher from '../../../utils/FetchJsonAPI/FetchJsonAPI';
+import React from "react";
+import { mount } from "enzyme";
+import Fetch from "./Fetch";
+import * as fetcher from "../../../utils/FetchJsonAPI/FetchJsonAPI";
 
-jest.mock('../../../utils/FetchJsonAPI/FetchJsonAPI', () => require
-  .requireActual('../../../utils/TestUtils/TestUtils')
-  .mockOriginalFunctionality(
-    '../FetchJsonAPI/FetchJsonAPI',
-  ));
+jest.mock("../../../utils/FetchJsonAPI/FetchJsonAPI", () =>
+  require
+    .requireActual("../../../utils/TestUtils/TestUtils")
+    .mockOriginalFunctionality("../FetchJsonAPI/FetchJsonAPI"),
+);
 
 // TOOD: get rid if useLayoutEffect since it's synchronous.
 // https://github.com/facebook/react/issues/14050
 // Temporary solution: https://github.com/facebook/react/issues/14050#issuecomment-438173736
-describe('<Fetch />', () => {
+describe("<Fetch />", () => {
   let fetchWrapper;
 
   beforeEach(() => {
     fetchWrapper = mount(<Fetch />);
   });
 
-  it('renders the text between the first paragraph', () => {
-    const expectedText = 'You have just fetched a TODO!';
+  it("renders the text between the first paragraph", () => {
+    const expectedText = "You have just fetched a TODO!";
 
-    expect(fetchWrapper.find('p').first().text()).toEqual(expectedText);
+    expect(
+      fetchWrapper
+        .find("p")
+        .first()
+        .text(),
+    ).toEqual(expectedText);
   });
 
-  it('calls FetchJsonAPI', () => {
+  it("calls FetchJsonAPI", () => {
     expect(fetcher.fetchJsonAPI).toHaveBeenCalled();
   });
 

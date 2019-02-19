@@ -1,5 +1,5 @@
-import React, { useState, useLayoutEffect } from 'react';
-import * as fetcher from '../../../utils/FetchJsonAPI/FetchJsonAPI';
+import React, { useState, useLayoutEffect } from "react";
+import * as fetcher from "../../../utils/FetchJsonAPI/FetchJsonAPI";
 
 const fetch = () => {
   const [todos, setTodos] = useState([]);
