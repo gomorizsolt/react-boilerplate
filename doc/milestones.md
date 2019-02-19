@@ -10,7 +10,7 @@ Major features:
 - [x] DotEnv.
 - [x] Prettier.
 - [ ] PWA.
-- [ ] Heroku deployment.
+- [x] Heroku deployment.
 - [ ] Examples.
 - [ ] Documentation.
 
