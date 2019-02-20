@@ -9,9 +9,9 @@ Major features:
 - [x] CSS loader and Styled-components.
 - [x] DotEnv.
 - [x] Prettier.
-- [ ] PWA.
+- [x] PWA.
 - [x] Heroku deployment.
-- [ ] Examples.
+- [x] Examples.
 - [ ] Documentation.
 
 Later / future decisions:
