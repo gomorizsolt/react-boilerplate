@@ -1,11 +1,11 @@
 import React, { useState, useLayoutEffect } from "react";
-import * as fetcher from "../../../utils/FetchJsonAPI/FetchJsonAPI";
+import * as fetcher from "../../../utils/FetchData/FetchData";
 
 const fetch = () => {
   const [todos, setTodos] = useState([]);
 
   const fetchTodos = async () => {
-    const fetchedTodos = await fetcher.fetchJsonAPI();
+    const fetchedTodos = await fetcher.fetchData("https://jsonplaceholder.typicode.com/todos/1");
 
     setTodos(fetchedTodos);
   };

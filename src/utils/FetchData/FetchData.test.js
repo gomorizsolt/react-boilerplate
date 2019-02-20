@@ -1,4 +1,4 @@
-import * as fetch from "./FetchJsonAPI";
+import * as fetcher from "./FetchData";
 
 const json = jest.fn().mockResolvedValue(() => ({
   title: "Lorem Ipsum",
@@ -9,21 +9,23 @@ window.fetch = jest.fn().mockImplementation(() => ({
   json,
 }));
 
-describe("FetchJsonAPI", () => {
+describe("fetchData", () => {
   let fetchMock;
+
+  const apiURl = "https://www.fake.com";
 
   beforeEach(() => {
     fetchMock = jest.spyOn(window, "fetch");
   });
 
-  it("calls window.fetch", () => {
-    fetch.fetchJsonAPI();
+  it("calls window.fetch with the given url", () => {
+    fetcher.fetchData(apiURl);
 
-    expect(fetchMock).toHaveBeenCalled();
+    expect(fetchMock).toHaveBeenCalledWith(apiURl);
   });
 
   it("calls json", () => {
-    fetch.fetchJsonAPI();
+    fetcher.fetchData(apiURl);
 
     expect(json).toHaveBeenCalled();
   });

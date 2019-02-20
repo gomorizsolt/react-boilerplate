@@ -1,12 +1,12 @@
 import React from "react";
 import { mount } from "enzyme";
 import Fetch from "./Fetch";
-import * as fetcher from "../../../utils/FetchJsonAPI/FetchJsonAPI";
+import * as fetcher from "../../../utils/FetchData/FetchData";
 
-jest.mock("../../../utils/FetchJsonAPI/FetchJsonAPI", () =>
+jest.mock("../../../utils/FetchData/FetchData", () =>
   require
     .requireActual("../../../utils/TestUtils/TestUtils")
-    .mockOriginalFunctionality("../FetchJsonAPI/FetchJsonAPI"),
+    .mockOriginalFunctionality("../FetchData/FetchData"),
 );
 
 // TOOD: get rid if useLayoutEffect since it's synchronous.
@@ -30,8 +30,8 @@ describe("<Fetch />", () => {
     ).toEqual(expectedText);
   });
 
-  it("calls FetchJsonAPI", () => {
-    expect(fetcher.fetchJsonAPI).toHaveBeenCalled();
+  it("calls fetchData", () => {
+    expect(fetcher.fetchData).toHaveBeenCalled();
   });
 
   // TODO: not working properly, receiving the empty array.
