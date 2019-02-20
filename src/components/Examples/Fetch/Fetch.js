@@ -1,25 +1,37 @@
-import React, { useState, useLayoutEffect } from "react";
+import React, { Component } from "react";
+import withRouter from "../../../hoc/withLoading/withLoading";
 import * as fetcher from "../../../utils/FetchData/FetchData";
 
-const fetch = () => {
-  const [todos, setTodos] = useState([]);
+class Fetch extends Component {
+  constructor(props) {
+    super(props);
 
-  const fetchTodos = async () => {
+    this.state = {
+      todos: [],
+    };
+
+    this.isLoading = true;
+  }
+
+  async componentDidMount() {
     const fetchedTodos = await fetcher.fetchData("https://jsonplaceholder.typicode.com/todos/1");
 
-    setTodos(fetchedTodos);
-  };
+    this.isLoading = false;
 
-  useLayoutEffect(() => {
-    fetchTodos();
-  }, [todos]);
+    this.setState({
+      todos: fetchedTodos,
+    });
+  }
 
-  return (
-    <div>
-      <p>You have just fetched a TODO!</p>
-      <p>{JSON.stringify(todos)}</p>
-    </div>
-  );
-};
+  render() {
+    const { todos } = this.state;
+    return (
+      <div>
+        <p>You have just fetched a TODO!</p>
+        <p>{JSON.stringify(todos)}</p>
+      </div>
+    );
+  }
+}
 
-export default fetch;
+export default withRouter(Fetch);

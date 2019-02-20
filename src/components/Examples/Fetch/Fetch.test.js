@@ -1,5 +1,5 @@
 import React from "react";
-import { mount } from "enzyme";
+import { shallow } from "enzyme";
 import Fetch from "./Fetch";
 import * as fetcher from "../../../utils/FetchData/FetchData";
 
@@ -9,14 +9,37 @@ jest.mock("../../../utils/FetchData/FetchData", () =>
     .mockOriginalFunctionality("../FetchData/FetchData"),
 );
 
-// TOOD: get rid if useLayoutEffect since it's synchronous.
-// https://github.com/facebook/react/issues/14050
-// Temporary solution: https://github.com/facebook/react/issues/14050#issuecomment-438173736
 describe("<Fetch />", () => {
   let fetchWrapper;
 
   beforeEach(() => {
-    fetchWrapper = mount(<Fetch />);
+    fetchWrapper = shallow(<Fetch />);
+  });
+
+  describe("componentDidMount", () => {
+    it("calls fetchData", () => {
+      expect(fetcher.fetchData).toHaveBeenCalled();
+    });
+
+    it("sets isLoading to false", () => {
+      expect(fetchWrapper.props().isLoading).toBeFalsy();
+    });
+
+    it("sets the fetched todos", async () => {
+      const fetchedTodo = [
+        {
+          userId: 1,
+          id: 1,
+          title: "delectus aut autem",
+          completed: false,
+        },
+      ];
+
+      fetcher.fetchData.mockImplementationOnce(() => fetchedTodo);
+      fetchWrapper = await shallow(<Fetch />);
+
+      expect(fetchWrapper.state("todos")).toEqual(fetchedTodo);
+    });
   });
 
   it("renders the text between the first paragraph", () => {
@@ -29,23 +52,4 @@ describe("<Fetch />", () => {
         .text(),
     ).toEqual(expectedText);
   });
-
-  it("calls fetchData", () => {
-    expect(fetcher.fetchData).toHaveBeenCalled();
-  });
-
-  // TODO: not working properly, receiving the empty array.
-  /* describe('test', () => {
-    beforeEach(() => {
-      fetcher.fetchJsonAPI.mockImplementationOnce(() => ({
-        data: {
-          title: 'Lorem Ipsum',
-        },
-      }));
-    });
-
-    it('renders the fetched todos', () => {
-      expect(fetchWrapper.find('p').at(1).text()).toEqual('asd');
-    });
-  }); */
 });
