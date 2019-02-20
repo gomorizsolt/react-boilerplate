@@ -11,6 +11,7 @@ export default function register() {
             installingWorker.onstatechange = () => {
               if (installingWorker.state === "installed") {
                 if (navigator.serviceWorker.controller) {
+                  // Add your custom reload icon so that inform your users about the new content.
                   console.log("New content is available; please refresh.");
                 } else {
                   console.log("Content is cached for offline use.");
