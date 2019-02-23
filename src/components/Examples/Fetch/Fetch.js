@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import withRouter from "../../../hoc/withLoading/withLoading";
+import withLoading from "../../../hoc/withLoading/withLoading";
 import * as fetcher from "../../../utils/FetchData/FetchData";
 
 class Fetch extends Component {
@@ -34,4 +34,4 @@ class Fetch extends Component {
   }
 }
 
-export default withRouter(Fetch);
+export default withLoading(Fetch);

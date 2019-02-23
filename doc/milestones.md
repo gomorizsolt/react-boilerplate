@@ -12,7 +12,7 @@ Major features:
 - [x] PWA.
 - [x] Heroku deployment.
 - [x] Examples.
-- [ ] Documentation.
+- [ ] Create a brief documentation about the implemented packages, mention their intentions / configuration files - if exists -, clarify the conventions about the structuring - naming convention doesn't matter since it depends on the users as well, i.e. each user prefers different type of namings.
 
 Later / future decisions:
 - [ ] Redux.

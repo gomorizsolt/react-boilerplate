@@ -1,14 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
 
 const withLoader = WrappedComponent => {
-  return class extends WrappedComponent {
+  // eslint-disable-next-line react/prefer-stateless-function
+  return class extends Component {
     render() {
       const { isLoading } = this.props;
+
       if (isLoading) {
-        return <div>Loading ... </div>;
+        return <div>Loading ...</div>;
       }
 
-      return super.render();
+      return <WrappedComponent {...this.props} />;
     }
   };
 };
