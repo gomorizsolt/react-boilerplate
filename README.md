@@ -28,6 +28,10 @@ Put simply, this skeleton doesn't contain anything that might be surprising to a
 - Heroku deployment
 - Examples
 
+### Feedbacks
+
+I'd appreciate if you leave any kind of opinion about the boilerplate project and also feel free to open an issue in order to ask for improvements.
+
 ### License
 
 The project is under the MIT license. For more information read the [**LICENSE.md**](./LICENSE.md) file.
