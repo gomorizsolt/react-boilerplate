@@ -12,9 +12,9 @@ Eventually, it's true.
 
 ### Then why did you create it?
 
-First and foremost, the project is created for particular neends. 
+First and foremost, the project is created for particular needs. 
 
-Put simply, this skeleton doesn't contain anything that might be surprising to anyone who familiar with React. It involves the most basic features that should be included within almost all the React projects.
+Put simply, this skeleton doesn't contain anything that might be surprising to anyone who is familiar with React. It involves the most basic features that should be included within almost all the React projects.
 
 ### The simplicity sounds good. What kind of functionalities does it provide?
 - Webpack and Babel
