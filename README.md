@@ -30,7 +30,7 @@ Put simply, this skeleton doesn't contain anything that might be surprising to a
 
 ### Structuring
 
-Basically, I prefer placing coherent files in the same folder instead of creating other folders. Obviously, use your own most prefered style, it's not a law that should be followed by everyone. :)
+Basically, I prefer placing coherent files in the same folder instead of creating other ones. Obviously, use your own most prefered style, it's not a law that should be followed by everyone. :)
 
 ### Feedbacks
 
