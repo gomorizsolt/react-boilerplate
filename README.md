@@ -32,6 +32,18 @@ Put simply, this skeleton doesn't contain anything that might be surprising to a
 
 Basically, I prefer placing coherent files in the same folder instead of creating other ones. Obviously, use your own most preferred style, it's not a law that should be followed by everyone. :)
 
+### Download
+
+```
+git clone https://github.com/gomorizsolt/react-boilerplate.git
+```
+
+### Installation
+```
+npm install
+npm run dev
+```
+
 ### Feedbacks
 
 I'd appreciate if you leave any kind of opinion about the boilerplate project and also feel free to open an issue in order to ask for improvements.
