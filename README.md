@@ -12,13 +12,29 @@ Eventually, it's true.
 
 ### Then why did you create it?
 
-First and foremost, the repo is created for some kind of interests. In addition, I wouldn't like to establish a project each time with the same needs.
+First and foremost, the project is created for particular needs. 
 
-Simply put, this skeleton contains nothing special. It involves the main basic stuff along with some pre-created examples in order to keep up with React.
+Put simply, this skeleton doesn't contain anything that might be surprising to anyone who is familiar with React. It involves the most basic features that should be included within almost all the React projects.
 
 ### The simplicity sounds good. What kind of functionalities does it provide?
+- Webpack and Babel
+- ESlint
+- Testing environment with Jest and Enzyme
+- Pre-commit hooks
+- CSS loader and styled-components
+- Environment variables handling with dotenv-webpack
+- Prettier
+- Register service worker to support PWAs
+- Heroku deployment
+- Examples
 
-Read the related documentation.
+### Structuring
+
+Basically, I prefer placing coherent files in the same folder instead of creating other ones. Obviously, use your own most preferred style, it's not a law that should be followed by everyone. :)
+
+### Feedbacks
+
+I'd appreciate if you leave any kind of opinion about the boilerplate project and also feel free to open an issue in order to ask for improvements.
 
 ### License
 

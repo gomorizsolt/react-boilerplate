@@ -1,7 +1,7 @@
 import React from "react";
-import { shallow } from "enzyme";
 import Fetch from "./Fetch";
 import * as fetcher from "../../../utils/FetchData/FetchData";
+import ShallowWrappedComponent from "../../../utils/ShallowWrappedComponent/ShallowWrappedComponent";
 
 jest.mock("../../../utils/FetchData/FetchData", () =>
   require
@@ -13,7 +13,7 @@ describe("<Fetch />", () => {
   let fetchWrapper;
 
   beforeEach(() => {
-    fetchWrapper = shallow(<Fetch />);
+    fetchWrapper = ShallowWrappedComponent(<Fetch />);
   });
 
   describe("componentDidMount", () => {
@@ -36,7 +36,7 @@ describe("<Fetch />", () => {
       ];
 
       fetcher.fetchData.mockImplementationOnce(() => fetchedTodo);
-      fetchWrapper = await shallow(<Fetch />);
+      fetchWrapper = await ShallowWrappedComponent(<Fetch />);
 
       expect(fetchWrapper.state("todos")).toEqual(fetchedTodo);
     });
