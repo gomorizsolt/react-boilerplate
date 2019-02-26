@@ -41,6 +41,7 @@ git clone https://github.com/gomorizsolt/react-boilerplate.git
 ### Installation
 ```
 npm install
+npm run test
 npm run dev
 ```
 
