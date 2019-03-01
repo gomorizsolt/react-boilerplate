@@ -47,7 +47,7 @@ npm run dev
 
 ### Feedbacks
 
-I'd appreciate if you leave any kind of opinion about the boilerplate project and also feel free to open an issue in order to ask for improvements.
+Any kind of feedbacks, opinions are appreciated. Also feel free to open an issue in order to ask for improvements.
 
 ### License
 
