@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const hooks = () => {
+const Hooks = () => {
   const [name, setName] = useState("");
 
   return (
@@ -14,4 +14,4 @@ const hooks = () => {
   );
 };
 
-export default hooks;
+export default Hooks;
