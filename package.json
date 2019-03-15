@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "RB is a customizable boilerplate for React projects.",
   "main": "index.js",
   "scripts": {
