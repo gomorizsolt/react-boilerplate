@@ -4,6 +4,7 @@ module.exports = {
         "jest": true,
         "browser": true    
     },
+    "parser": "babel-eslint",
     "extends": [
         "airbnb",
         "plugin:prettier/recommended"
