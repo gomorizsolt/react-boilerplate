@@ -7,7 +7,9 @@
     "start": "serve -s dist",
     "dev": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "test": "jest --coverage",
+    "test:coverage": "jest --coverage",
+    "test:only": "jest",
+    "test:watch-all": "jest --watchAll",
     "lint": "eslint src",
     "prettior": "prettier --write src/**/*.js",
     "heroku-postbuild": "npm run build"
@@ -79,7 +81,7 @@
     }
   },
   "pre-commit": [
-    "test",
+    "test:only",
     "lint"
   ]
 }
