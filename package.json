@@ -81,7 +81,7 @@
     }
   },
   "pre-commit": [
-    "test",
+    "test:only",
     "lint"
   ]
 }
