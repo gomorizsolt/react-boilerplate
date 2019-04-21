@@ -2,21 +2,12 @@
 
 [![CircleCI](https://circleci.com/gh/gomorizsolt/react-boilerplate/tree/master.svg?style=svg&circle-token=ce1c7d622158db4975687d0a4e6a9214d3403c0c)](https://circleci.com/gh/gomorizsolt/react-boilerplate/tree/master)
 
-### What the hack is RB?
+I'm aware of the fact that there're a bunch of other React specific boilerplates that handle the usually included features differently - and even more abstractly. On the contrary, RB serves several
+packages along with their basic configurations that might satisfy the needs of a particular group of developers.
 
-RB is a simple boilerplate for your React projects.
+What I actually meant with the latter sentence above is that the project contains settings that I use on a daily basis.
 
-### There are a bunch of other similar packages.
-
-Eventually, it's true.
-
-### Then why did you create it?
-
-First and foremost, the project is created for particular needs. 
-
-Put simply, this skeleton doesn't contain anything that might be surprising to anyone who is familiar with React. It involves the most basic features that should be included within almost all the React projects.
-
-### The simplicity sounds good. What kind of functionalities does it provide?
+### RB consists of the following list of elements:
 - Webpack and Babel
 - ESlint
 - Testing environment with Jest and Enzyme
@@ -27,10 +18,6 @@ Put simply, this skeleton doesn't contain anything that might be surprising to a
 - Register service worker to support PWAs
 - Heroku deployment
 - Examples
-
-### Structuring
-
-Basically, I prefer placing coherent files in the same folder instead of creating other ones. Obviously, use your own most preferred style, it's not a law that should be followed by everyone. :)
 
 ### Download
 
@@ -47,7 +34,7 @@ npm run dev
 
 ### Feedbacks
 
-Any kind of feedbacks, opinions are appreciated. Also feel free to open an issue in order to ask for improvements.
+Any kind of feedbacks, opinions and asks for improvements are appreciated.
 
 ### License
 
