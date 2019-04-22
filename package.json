@@ -11,7 +11,7 @@
     "test:only": "jest",
     "test:watch-all": "jest --watchAll",
     "lint": "eslint src",
-    "prettior": "prettier --write src/**/*.js",
+    "prettier": "prettier --write src/**/*.js",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
