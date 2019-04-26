@@ -1,7 +1,5 @@
 # RB
 
-[![CircleCI](https://circleci.com/gh/gomorizsolt/react-boilerplate/tree/master.svg?style=svg&circle-token=ce1c7d622158db4975687d0a4e6a9214d3403c0c)](https://circleci.com/gh/gomorizsolt/react-boilerplate/tree/master)
-
 ### Introduction
 
 I'm aware of the fact that there're a bunch of other React specific boilerplates that handle the usually included features differently - and even more abstractly. On the contrary, RB serves several

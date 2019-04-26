@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "stable"
+install:
+  - yarn install
+cache:
+  directories:
+    - "node_modules"
+stages:
+    - lint
+    - test
+jobs:
+  include:
+    - stage: lint
+      script:
+        - yarn run lint
+    - stage: test
+      script:
+        - yarn run test:coverage
