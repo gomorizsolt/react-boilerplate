@@ -1,5 +1,9 @@
 # RB
 
+| Branch | Status |
+| ------ | ------ |
+| master | [![Build Status](https://travis-ci.com/gomorizsolt/react-boilerplate.svg?branch=master)](https://travis-ci.org/gomorizsolt/react-boilerplate)   [![Coverage Status](https://coveralls.io/repos/github/gomorizsolt/react-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/gomorizsolt/react-boilerplate?branch=master) |
+
 ### Introduction
 
 I'm aware of the fact that there're a bunch of other React specific boilerplates that handle the usually included features differently - and even more abstractly. On the contrary, RB serves several
