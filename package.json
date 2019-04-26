@@ -13,7 +13,7 @@
     "lint": "eslint src",
     "prettior": "prettier --write src/**/*.js",
     "heroku-postbuild": "npm run build",
-    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",

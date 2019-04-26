@@ -1,7 +1,8 @@
 # RB
 
-[![Build Status](https://travis-ci.com/gomorizsolt/react-boilerplate.svg?branch=master)](https://travis-ci.org/gomorizsolt/react-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/gomorizsolt/react-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/gomorizsolt/react-boilerplate?branch=master)
+| Branch | Status |
+| ------ | ------ |
+| master | [![Build Status](https://travis-ci.com/gomorizsolt/react-boilerplate.svg?branch=master)](https://travis-ci.org/gomorizsolt/react-boilerplate)   [![Coverage Status](https://coveralls.io/repos/github/gomorizsolt/react-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/gomorizsolt/react-boilerplate?branch=master) |
 
 ### Introduction
 
