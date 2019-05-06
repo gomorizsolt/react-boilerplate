@@ -4,7 +4,9 @@ export const mockOriginalFunctionality = name => {
   return {
     ...Object.getOwnPropertyNames(actualModule)
       .map(functionName => ({
-        [functionName]: jest.fn().mockImplementation((...args) => actualModule[functionName](...args)),
+        [functionName]: jest
+          .fn()
+          .mockImplementation((...args) => actualModule[functionName](...args)),
       }))
       .reduce((accumulator, currentValue) => ({ ...accumulator, ...currentValue })),
   };
