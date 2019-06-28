@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import App from "./App";
-import { BasicDiv, List } from "./App.style";
+import { BasicDiv } from "./App.style";
 
 describe("<App />", () => {
   let wrapper;
@@ -16,9 +16,5 @@ describe("<App />", () => {
 
   it("renders BasicDiv", () => {
     expect(wrapper.find(BasicDiv)).toHaveLength(1);
-  });
-
-  it("renders List", () => {
-    expect(wrapper.find(List)).toHaveLength(1);
   });
 });
