@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
+    "build:docz": "docz build",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "dev": "webpack-dev-server --open --mode development",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build",
+    "dev:docz": "docz dev",
     "heroku-postbuild": "npm run build",
     "lint": "eslint src",
     "prettior": "prettier --write src/**/*.js",
