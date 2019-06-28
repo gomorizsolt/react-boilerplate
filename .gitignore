@@ -6,3 +6,6 @@
 
 # jest coverage
 /coverage
+
+# docz
+/.docz
