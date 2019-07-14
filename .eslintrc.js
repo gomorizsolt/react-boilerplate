@@ -2,7 +2,7 @@ module.exports = {
     "env": {
         "node": true,
         "jest": true,
-        "browser": true    
+        "browser": true
     },
     "parser": "babel-eslint",
     "extends": [
@@ -11,7 +11,6 @@ module.exports = {
     ],
     "plugins": [
         "react",
-        "prettier",
         "react-hooks"
     ],
     "rules": {
