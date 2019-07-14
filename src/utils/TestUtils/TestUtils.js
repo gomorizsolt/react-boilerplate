@@ -8,6 +8,9 @@ export const mockOriginalFunctionality = name => {
           .fn()
           .mockImplementation((...args) => actualModule[functionName](...args)),
       }))
-      .reduce((accumulator, currentValue) => ({ ...accumulator, ...currentValue })),
+      .reduce((accumulator, currentValue) => ({
+        ...accumulator,
+        ...currentValue,
+      })),
   };
 };
