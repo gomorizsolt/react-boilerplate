@@ -10,8 +10,8 @@
     "lint": "eslint src",
     "prettior": "prettier --write src/**/*.js",
     "start": "serve -s dist",
+    "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:only": "jest",
     "test:watch-all": "jest --watchAll"
   },
   "repository": {
@@ -72,16 +72,8 @@
     "serve": "^10.1.2",
     "styled-components": "^4.1.3"
   },
-  "jest": {
-    "setupFiles": [
-      "<rootDir>/src/utils/SetupTests/SetupTests.js"
-    ],
-    "moduleNameMapper": {
-      ".+\\.(png|jpg|css|svg)$": "identity-obj-proxy"
-    }
-  },
   "pre-commit": [
-    "test:only",
+    "test",
     "lint"
   ]
 }
