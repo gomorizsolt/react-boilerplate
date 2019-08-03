@@ -25,7 +25,7 @@ Install dependencies.
 npm install
 ```
 
-:rocket: Launch the development environment.
+Launch the development environment. :rocket:
 
 ```bash
 npm run dev
