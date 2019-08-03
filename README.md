@@ -11,13 +11,13 @@
 
 ## How to use?
 
-1. Clone the project.
+Clone the project.
 
 ```bash
 git clone https://github.com/gomorizsolt/react-boilerplate.git
 ```
 
-2. Install the dependencies and start off the development environment.
+Install the dependencies and start off the development environment.
 
 ```bash
 npm install
