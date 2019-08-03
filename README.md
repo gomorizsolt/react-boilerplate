@@ -1,45 +1,33 @@
 # RB
 
-| Branch | Status |
-| ------ | ------ |
-| master | [![Build Status](https://travis-ci.com/gomorizsolt/react-boilerplate.svg?branch=master)](https://travis-ci.com/gomorizsolt/react-boilerplate)   [![Coverage Status](https://coveralls.io/repos/github/gomorizsolt/react-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/gomorizsolt/react-boilerplate?branch=master) |
-
-### Introduction
-
-I'm aware of the fact that there're a bunch of other React specific boilerplates that handle the usually included features differently - and even more abstractly. On the contrary, RB serves several
-packages along with their basic configurations that might satisfy the needs of a particular group of developers.
-
-What I actually meant with the latter sentence above is that the project contains settings that I use on a daily basis.
-
-### RB consists of the following list of elements:
-- Webpack and Babel
+## Core features
 - ESlint
-- Testing environment with Jest and Enzyme
-- Pre-commit hooks
-- CSS loader and styled-components
-- Environment variables handling with dotenv-webpack
+- Jest & Enzyme
+- Pre-commit
 - Prettier
-- Register service worker to support PWAs
-- Heroku deployment
-- Examples
+- CSS loader & styled-components
+- Environment variables
+- Automated Heroku deployment flow
 
-### Download
+## How to use?
 
-```
+Clone the project.
+
+```bash
 git clone https://github.com/gomorizsolt/react-boilerplate.git
 ```
 
-### Installation
-```
+Install the dependencies and start off the development environment.
+
+```bash
 npm install
-npm run test
 npm run dev
 ```
 
-### Feedbacks
+## Contribution
 
-Any kind of feedbacks, opinions and asks for improvements are appreciated.
+Contributors are welcome and also expected to adhere to the [**Contributor Covenant**](https://www.contributor-covenant.org/).
 
-### License
+## License
 
 The project is under the MIT license. For more information read the [**LICENSE.md**](./LICENSE.md) file.
