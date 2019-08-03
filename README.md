@@ -1,5 +1,7 @@
 # RB
 
+*TypeScript support is coming soon!*
+
 ## Core features
 - ESlint
 - Jest & Enzyme
