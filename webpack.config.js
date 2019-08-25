@@ -29,6 +29,7 @@ const swPrecachePlugin = new SwPrecachePlugin({
 
 module.exports = {
   entry: ["@babel/polyfill", path.join(__dirname, "src/index.js")],
+  devtool: "source-map",
   module: {
     rules: [
       {
