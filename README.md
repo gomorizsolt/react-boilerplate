@@ -1,6 +1,6 @@
 # RB
 
-*Released [**R[TS]B**](https://github.com/gomorizsolt/react-typescript-boilerplate) to feature the same capabilities of **RB** with TypeScript support.*
+*Recently released [**R[TS]B**](https://github.com/gomorizsolt/react-typescript-boilerplate) to feature the same capabilities of **RB** with TypeScript support.*
 
 ## Core features
 - ESlint
