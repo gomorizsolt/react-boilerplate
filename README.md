@@ -1,7 +1,5 @@
 # RB
 
-*[**R[TS]B**](https://github.com/gomorizsolt/react-typescript-boilerplate) has recently been open-sourced as an all-new boilerplate to support TypeScript.*
-
 ## Core features
 - ESlint
 - Jest & Enzyme
