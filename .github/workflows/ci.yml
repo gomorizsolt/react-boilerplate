@@ -1,0 +1,21 @@
+name: CI/CD
+
+on: push
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      run: |
+        yarn install
+        yarn run lint
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      run: |
+        yarn install
+        yarn run test:coverage
