@@ -7,15 +7,37 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      run: |
-        yarn install
-        yarn run lint
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+      - name: Cache JS dependencies
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-js-dependencies-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-js-dependencies-
+      - name: Install dependencies
+        run: npm install
+      - name: Lint
+        run: npm run lint
   test:
     name: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      run: |
-        yarn install
-        yarn run test:coverage
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+      - name: Cache JS dependencies
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-js-dependencies-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-js-dependencies-
+      - name: Install dependencies
+        run: npm install
+      - name: Test coverage
+        run: npm run test:coverage
