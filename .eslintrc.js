@@ -7,11 +7,11 @@ module.exports = {
     "parser": "babel-eslint",
     "extends": [
         "airbnb",
+        "plugin:react/recommended", // Following the preset's recommendation: https://github.com/yannickcr/eslint-plugin-react#configuration
         "plugin:prettier/recommended"
     ],
     "plugins": [
-        "react",
-        "react-hooks"
+        "react-hooks" // https://www.npmjs.com/package/eslint-plugin-react-hooks
     ],
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
