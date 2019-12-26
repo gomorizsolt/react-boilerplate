@@ -3,6 +3,7 @@
 ## Core features
 - ESlint
 - Jest & Enzyme
+- PropTypes
 - Pre-commit
 - Prettier
 - CSS loader & styled-components
