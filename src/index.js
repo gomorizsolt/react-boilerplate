@@ -3,8 +3,6 @@ import ReactDOM from "react-dom";
 import Foo from "./components/Foo/Foo";
 import registerServiceWorker from "./registerServiceWorker";
 
-const Index = () => <Foo name="@developer" />;
-
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render(<Foo name="__bar__" />, document.getElementById("index"));
 
 registerServiceWorker();

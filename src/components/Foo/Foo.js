@@ -1,6 +1,10 @@
 import React from "react";
-import { SampleH1 } from "./Foo.style";
+import PropTypes from "prop-types";
 
-const foo = ({ name }) => <SampleH1>Hello {name}!</SampleH1>;
+const foo = ({ name }) => <p>Hello {name}!</p>;
+
+foo.propTypes = {
+  name: PropTypes.string.isRequired,
+};
 
 export default foo;
