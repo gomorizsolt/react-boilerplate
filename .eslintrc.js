@@ -16,7 +16,6 @@ module.exports = {
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/display-name": 0, // Comes from eslint-plugin-react's default recommendation.
-        "react/prop-types": 0,
         "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
         "import/prefer-default-export": 0,
         "linebreak-style": ["error", (process.platform === "win32" ? "windows" : "unix")],
